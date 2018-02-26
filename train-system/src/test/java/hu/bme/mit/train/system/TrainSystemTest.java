@@ -51,6 +51,14 @@ public class TrainSystemTest {
 	}
 
 
+	@Test
+	public void CheckSetSpeedLimit() {
+		controller.setSpeedLimit(-50);
+		Assert.assertEquals(0, controller.getReferenceSpeed());
+
+		controller.setSpeedLimit(15);
+		Assert.assertEquals(0, controller.getReferenceSpeed());
+	}
 
 	
 }
