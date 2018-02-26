@@ -4,8 +4,27 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="train" />
+    <orderEntry type="module" module-name="train-controller" />
+    <orderEntry type="module" module-name="train-controller_main" />
+    <orderEntry type="module" module-name="train-controller_test" />
+    <orderEntry type="module" module-name="train-interfaces" />
+    <orderEntry type="module" module-name="train-interfaces_main" />
+    <orderEntry type="module" module-name="train-interfaces_test" />
+    <orderEntry type="module" module-name="train-sensor" />
+    <orderEntry type="module" module-name="train-sensor_main" />
+    <orderEntry type="module" module-name="train-sensor_test" />
+    <orderEntry type="module" module-name="train-system" />
+    <orderEntry type="module" module-name="train-system_main" />
+    <orderEntry type="module" module-name="train-system_test" />
+    <orderEntry type="module" module-name="train-user" />
+    <orderEntry type="module" module-name="train-user_main" />
+    <orderEntry type="module" module-name="train-user_test" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="com.google.guava:guava:24.0-jre" level="project" />
   </component>
 </module>
