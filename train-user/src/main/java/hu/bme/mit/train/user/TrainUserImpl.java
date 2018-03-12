@@ -26,6 +26,23 @@ public class TrainUserImpl implements TrainUser {
 	public void overrideJoystickPosition(int joystickPosition) {
 		this.joystickPosition = joystickPosition;
 		controller.setJoystickPosition(joystickPosition);
+
+		int _speed = controller.getReferenceSpeed();
+		if(joystickPosition < 0){
+			_speed += 5;
+		}
+
+		else{
+			_speed -= 5;
+		}
+
+
+		final int speed = _speed;
+		Thread t1 = new Thread(() -> {
+			controller.setSpeedLimit(speed);
+		});
+
+		t1.start();
 	}
 
 }
