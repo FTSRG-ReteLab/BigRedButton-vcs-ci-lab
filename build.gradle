@@ -3,10 +3,11 @@ plugins {
 }
 subprojects {
   subproject ->
+    apply plugin: 'java'
+    apply plugin: 'jacoco'
     apply plugin: 'org.sonarqube'
 
-
-  repositories {
+    repositories {
     jcenter()
   }
 }
