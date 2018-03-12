@@ -27,7 +27,7 @@ public class TrainUserImpl implements TrainUser {
 		this.joystickPosition = joystickPosition;
 		controller.setJoystickPosition(joystickPosition);
 
-		int _speed = controller.getReferenceSpeed();
+		int tempspeed = controller.getReferenceSpeed();
 		if(joystickPosition > 0){
 			_speed += 10;
 		}
