@@ -36,6 +36,7 @@ public class TrainUserImpl implements TrainUser {
 			timer.schedule(new TimerTask() {
 				@Override
 				public void run() {
+					controller.setSpeedLimit(controller.getReferenceSpeed()+5);
 				}
 			}, delay);
 
@@ -43,12 +44,11 @@ public class TrainUserImpl implements TrainUser {
 			timer.schedule(new TimerTask() {
 				@Override
 				public void run() {
-					controller.setSpeedLimit(controller.getReferenceSpeed()+5);
+					controller.setSpeedLimit(controller.getReferenceSpeed()-5);
 				}
 			}, delay);
 		}
 
-		controller.setJoystickPosition(joystickPosition);
 
 	}
 
