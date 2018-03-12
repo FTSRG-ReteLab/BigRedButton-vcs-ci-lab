@@ -28,12 +28,12 @@ public class TrainUserImpl implements TrainUser {
 		controller.setJoystickPosition(joystickPosition);
 
 		int _speed = controller.getReferenceSpeed();
-		if(joystickPosition < 0){
-			_speed += 5;
+		if(joystickPosition > 0){
+			_speed += 10;
 		}
 
 		else{
-			_speed -= 5;
+			_speed -= 10;
 		}
 
 
